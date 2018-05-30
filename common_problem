@@ -3,3 +3,21 @@ when migrating  service into AWS platform, common problems summary
 (1) routing traffic between on-premises network  and AWS service (Ec2 instance, cloudfront, loadbalancer)
 
 https://aws.amazon.com/blogs/security/how-to-set-up-dns-resolution-between-on-premises-networks-and-aws-using-aws-directory-service-and-amazon-route-53/
+(2) migration exsiting Domains or add new subdomains for new deployed AWS services
+Creating a Subdomain That Uses Amazon Route 53 as the DNS Service without Migrating the Parent Domain
+
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route53-dg.pdf#CreatingNewSubdomain
+The process has four basic steps:
+
+(1)Create a Route 53 hosted zone for the subdomain.
+
+(2)Add records for the new subdomain to your Route 53 hosted zone.
+
+(3)API only: Confirm that your changes have propagated to all Route 53 DNS servers.
+
+Note
+
+Currently, the only way to verify that changes have propagated is to use the GetChange API action. Changes generally propagate to all Route 53 name servers within 60 seconds.
+
+(4)Update the DNS service for the parent domain by adding name server records for the subdomain.
+
