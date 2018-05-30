@@ -1,0 +1,5 @@
+
+when migrating  service into AWS platform, common problems summary
+(1) routing traffic between on-premises network  and AWS service (Ec2 instance, cloudfront, loadbalancer)
+
+https://aws.amazon.com/blogs/security/how-to-set-up-dns-resolution-between-on-premises-networks-and-aws-using-aws-directory-service-and-amazon-route-53/
