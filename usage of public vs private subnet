@@ -1,0 +1,11 @@
+
+Private subnet prevent inbound traffic accessing EC2 instances
+Public subnets allow inbound traffic accessing Ec2 instances directly.
+Public subnets sends traffic to Internet directly
+private subnet can send traffic to Internet throught Internet Gateway.
+
+The instances in the public subnet can receive inbound traffic directly from the Internet, 
+whereas the instances in the private subnet can't. 
+The instances in the public subnet can send outbound traffic directly to the Internet, 
+whereas the instances in the private subnet can't. 
+Instead, the instances in the private subnet can access the Internet by using a network address translation (NAT) instance that you launch into the public subnet.
