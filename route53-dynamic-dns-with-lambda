@@ -1,3 +1,6 @@
 route53-dynamic-dns-with-lambda
+https://github.com/aws-samples/aws-lambda-ddns-function
+https://aws.amazon.com/blogs/compute/building-a-dynamic-dns-for-route-53-using-cloudwatch-events-and-lambda/
 
-https://github.com/awslabs/route53-dynamic-dns-with-lambda
+
+
